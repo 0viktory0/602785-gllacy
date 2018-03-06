@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Виктория](https://up.htmlacademy.ru/htmlcss/20/user/602785).
-* Наставник: {Александр Собкарь] (https://htmlacademy.ru/profile/id128451).
+* Наставник: [Александр Собкарь] (https://htmlacademy.ru/profile/id128451).
 
 ---
 
