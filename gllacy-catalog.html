@@ -70,7 +70,67 @@
             <h1 class="page-title">Сливочное мороженое</h1>
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр мороженок</h2>
-                    <!-- Здесь будет форма -->
+                    
+
+                <input type="range" min="50" max="800">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="sorting">
+                    <p>Сортировка:</p>
+                    <select name="list">
+                        <option value="по популярности">по популярности</option>
+                    </select>
+                </div>    
+                <div class="prices">
+                    <label for="price">Цена:</label>
+                    <input type="range" id="price" name="price" min="0" max="800" step="100">
+                    <output name="price1"></output>
+                    <output name="price2"></output>
+                </div>
+                <div class="ice-fat">
+                    <p>Жирность:</p>
+                    <label>
+                        <input type="radio" name="fat" value="0">
+                        0%
+                    </label>
+                    <label>
+                        <input type="radio" name="fat" value="10" checked>
+                        до 10%
+                    </label>
+                    <label>
+                        <input type="radio" name="fat" value="30" checked>
+                        до 30%
+                    </label>
+                    <label>
+                        <input type="radio" name="fat" value="more30" checked>
+                        выше 30%
+                    </label>
+                </div>
+                <div class="fillers">
+                    <p>Наполнители:</p>
+                    <label>
+                        <input type="checkbox" name="filler" value="chocolad">
+                        шоколадные 
+                    </label>
+                    <label>
+                       <input type="checkbox" name="filler" value="suger" checked>
+                        сахарные присыпки
+                    </label>
+                    <label>
+                        <input type="checkbox" name="filler" value="fruit" checked>
+                        фрукты
+                    </label>
+                    <label>
+                        <input type="checkbox" name="filler" value="syrup" checked>
+                        сиропы
+                    </label>
+                    <label>
+                        <input type="checkbox" name="filler" value="jam" checked>
+                        джемы
+                    </label>
+                </div>
+
+                <input type="submit" value="Применить">
+            </form>
                 </section>    
             <section class="catalog">
                 <ul class="catalog-list">
