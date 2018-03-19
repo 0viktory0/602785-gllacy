@@ -1,28 +1,30 @@
-<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html"> 
-                <img src="img/logo.svg" width="154" height="64" alt="Логотип глэйси">
+                <a class="main-header-logo"> 
+                    <img src="img/logo.svg" width="154" height="64" alt="Логотип глэйси">
                 </a>
-                   <ul class="site-navigation">
-                        <li> <a href="gllacy-catalog.html">Каталог</a>
-                            <ul>
-                                <li><a href="#">Новинки</a></li>
-                                <li><a href="#">Сливочное</a></li>
-                                <li><a href="#">Щербеты</a></li>
-                                <li><a href="#">Фруктовый лед</a></li>
-                                <li><a href="#">Мелорин</a></li>
-                            </ul>
-                        </li>
-                        <li> <a href="delivery-price.html">Доставка и оплата</a></li>
-                        <li> <a href="about-company.html">О компании</a></li>
-                    </ul>
+                <ul class="site-navigation">
+                    <li> <a class="main-position" href="gllacy-catalog.html">Каталог</a>
+                        <ul class="menu">
+                            <li><a href="#"><b>Новинки</b></a></li>
+                            <li><a href="#">Сливочное</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелорин</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="delivery-price.html">Доставка и оплата</a></li>
+                    <li> <a href="about-company.html">О компании</a></li>
+                </ul>
             </nav>
             <div class="navigation">
                 <ul class="user-navigation">
@@ -55,7 +57,7 @@
                         <button class="button" type="submit">Оформить заказ</button>
                 </ul>
             </div>
-            <div class="information">
+            <div>
                 <p class="working-time">с 10 до 20, ежедневно</p>
                 <p class="telephone">8 812 450-25-25</p>
             </div>
@@ -133,7 +135,7 @@
                     </form>
                 </section>  
 
-                <section class="catalog">
+                <section class="items">
                     <h2 class="visually-hidden">Каталог товаров</h2>
                     <ul class="catalog-list">
                         <li class="catalog-item">                  
@@ -217,30 +219,28 @@
                 </ul>
             </main>
             <footer class="main-footer">
-                <div class="footer-social">
-                    <ul>
-                        <li><a class="social-button" href="#">Твиттер</a></li>
-                        <li><a class="social-button" href="#">Инстаграм</a></li>
-                        <li><a class="social-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" href="#">Вконтакте</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-information">
-                    <ul>
-                        <li><a href="#"><span class="information"> Для постащиков</span></a></li>
-                        <li><a href="#"><span class="information">О производстве</span></a></li>
-                        <li><a href="#"><span class="information">Наши документы</span></a></li>
-                        <li><a href="#"><span class="information">Экологические стандарты</span></a></li>
-                    </ul>
-                </div>
-
-                <section class="logo">
-                    <h2 class="visually-hidden">HTML Academy</h2>
-                    <img src="img/logo-htmlacademy.svg" width="108" height="39"
-                    alt="Логотип Академии">
-                    <p>Сделано в <a class="logo" href="#">HTML Academy</a>&copy; 2016</p>               
-                </section>  
-            </footer>
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Твиттер</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                </ul>
+            </div>
+            <div class="footer-information">
+                <ul>
+                    <li><a href="#" class="information"><b>Для постащиков</b></a></li>
+                    <li><a href="#" class="information">О производстве</a></li>
+                    <li><a href="#" class="information">Наши документы</a></li>
+                    <li><a href="#" class="information">Экологические стандарты</a></li>
+                </ul>
+            </div>
+            <section class="logo">
+                <h2 class="visually-hidden">HTML Academy</h2>
+                <img src="img/logo-htmlacademy.svg" width="108" height="39"
+                alt="Логотип Академии">
+                <p>Сделано в <a class="logo" href="#">HTML Academy</a>&copy; 2016</p>               
+            </section>  
+        </footer>
     </body>
 </html>

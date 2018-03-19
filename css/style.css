@@ -11,9 +11,9 @@ body {
 	background-color: #849d8f;
 }
 
-.user-navigation,
-.site-navigation,
-.menu {
+.main-header ul,
+.gifts ul, 
+.items ul {
 	list-style: none;
 } 
 
@@ -28,6 +28,7 @@ body {
 	line-height: 16px;
 	font-weight: 500;
 	color: #ffffff; 
+	text-decoration: none;
 }
 
 .site-navigation a:hover,
@@ -35,19 +36,40 @@ body {
 .site-navigation a:focus,
 .user-navigation a:focus {
 	color: #000000;
+	text-decoration: none;
+
 	background-color: #ffffff; 
 }
 
 .menu a {;
 	line-height: 18px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #000000;
 	text-decoration: none;
+
+	background-color: #ffffff; 
 }
 
 .menu a:focus,
 .menu a:hover {
-	background-color: #849d8f; 
+	text-decoration: none;
+
+	background-color: #fbded7; 
+	
+}
+
+.working-time {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	text-align: right;
+}
+
+.telephone {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: right;
 }
 
 .search input {
@@ -70,20 +92,23 @@ body {
 	border-color: #8fbdec;
 }
 
-.restore a,
-.new-reg a {
+a.restore,
+a.new-reg {
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #000000;
-	text-decoration: none;
+    text-decoration: underline;
 }
 
-.restore a:hover, 
-.new-reg a:hover,
-.new-reg a:focus,
-.restore a:focus {
+a.restore:hover, 
+a.new-reg:hover,
+a.new-reg:focus,
+a.restore:focus {
 	color: #e84d37;
+	text-decoration: underline;
+
+	background-color: transparent;
 } 
 
 
@@ -179,14 +204,14 @@ background-color: #f17e65;
 
 .gift--raspberry {
 	background-color: #791533;
-	background-image: url("img/strowberryfont.jpg");
+	background-image: url("../img/strowberryfont.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
 .gift--сhocolate {
-	background-color: #791533;
-	background-image: url("img/chocolate.jpg");
+	background-color: #58321f;
+	background-image: url("../img/chocolate.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
@@ -200,6 +225,7 @@ background-color: #f17e65;
 	color: #ffffff;
 	text-align: center;
 	vertical-align: middle;
+	text-decoration: none;
 
 	background-color: #ac1000;
 	border: none;
@@ -208,35 +234,42 @@ background-color: #f17e65;
 .button:hover, 
 .button:focus,
 .button:active {
+	text-decoration: none;
+
     background-color: #f17e65;
 } 
 
-.item a {
+.item a,
+.items a {
 	color: #ffffff;
 	font-weight: 500;
 	text-align: center;
 }
 
 .item a:focus,
+.items a:focus,
+.items a:hover,
 .item a:hover {
 	color: #f17e65;
 }
 
-.item span {
+.item span,
+.items span {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 700;
 }
 
-.item p {
-	font-size: 10.5px;
-	line-height: 45px;
+.item p,
+.items p {
+	font-size: 22px;
+	line-height: 24px;
 	font-weight: 700;
 }
 
 .about-gllacy {
 	background-color: #eadec4;
-	background-image: url("img/vafel.jpg");
+	background-image: url("../img/vafel.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
@@ -259,7 +292,7 @@ background-color: #f17e65;
 	color: #000000;
 
 	background-color: #ffffff;
-	background-image: url("img/new.jpg");
+	background-image: url("../img/new.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
@@ -278,11 +311,14 @@ background-color: #f17e65;
 
 .subscription {
 	color: #5a5a5a;
+	border: 50px;
 
     background-color: #f8f7f4;
-	background-image: url("img/post.jpg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+	border-image-source: url("../img/post.jpg");
+	border-image-slice: 120;
+	background: url("../img/post.jpg") no-repeat #000000;
+/*	background-position: 0 0;
+	background-repeat: no-repeat;*/
 }
 
 .contacts {
@@ -303,24 +339,12 @@ background-color: #f17e65;
     list-style: none;
 }
 
-.provider-information a {
-	font-weight: 700;
-    color: #ffffff;   
-}
-
-.provider-information a:hover, 
-.provider-information a:focus {
-    color: #ffbc9e;
-} 
-
-.information a {	
+.information {	
 	color: #ffffff;
 }
 
-.information a:hover,
-.provider-information a:hover,
-.information a:focus, 
-.provider-information a:focus {
+.information:hover,
+.information:focus {
     color: #ffbc9e;
 }
 
@@ -337,3 +361,63 @@ background-color: #f17e65;
 .logo a:focus {
     color: #ffbc9e;
 } 
+
+.pagination-list{
+	list-style: none;
+}
+
+.pagination-list a {
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	list-style: none;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+	color: #000000;
+	text-decoration: none;
+
+	background-color: #ffffff; 
+}
+
+
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:hover {
+	text-decoration: none;
+
+	background-color: #fbded7; 
+}
+
+.breadcrumbs-current {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.page-title {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.filters p {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+
